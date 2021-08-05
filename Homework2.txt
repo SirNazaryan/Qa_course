@@ -1,0 +1,59 @@
+1)	Посмотреть где я- PWD
+2)	Создать папку- mkdir Qa_course
+3)	Зайти в папку- cd Qa_course
+4)	Создать 3 папки- mkdir Linux Github Postman
+5)	Зайти в любоую папку- cd Github
+6)	 Создать 5 файлов (3 txt, 2 json)- touch lesson1.txt lesson2.txt lesson3.txt lesson4.json lesson5.json
+7)	Создать 3 папки- mkdir Git1 Git2 Git3
+8)	Вывести список содержимого папки- ls –la
+9)	+ Открыть любой txt файл- vi lesson1.txt
+10)	+ написать туда что-нибудь, любой текст- I + Qa lesson1
+11)	+ сохранить и выйти- Escape Shift ZZ поочередное зажжатие
+12)	Выйти из папки на уровень выше- cd ..
+
+13)	переместить любые 2 файла, которые вы создали, в любую другую папку-
+
+a)	возвращаться в папку Github- cd Github
+b)	mv /c/Users/sirna/documents/Qa_course/Github/lesson1.txt /c/Users/sirna/documents/Qa_course/Github/lesson2.txt /c/documents/Qa_course/Linux/
+14)	скопировать любые 2 файла, которые вы создали, в любую другую папку- 
+ cp /c/Users/sirna/documents/Qa_course/Github/lesson3.txt /c/Users/sirna/documents/Qa_course/Github/lesson4.json /c/documents/Qa_course/Linux/
+15)	Найти файл по имени- find –name lesson3.txt (во всех папках- find . –name lesson1.txt 2>/dev/null
+16)	просмотреть содержимое в реальном времени (команда grep) изучите как она работает(tail –f ./lesson1.txt
+a)	искать lesson во всех директориях- grep lesson ./*
+b)	искать lesson во всех директориях игнорируя большие буквы- grep –i lesson ./*
+c)	искать файл- grep “” lesson1 
+17)	вывести несколько первых строк из текстового файла- cat lesson1.txt | head –n4 | tail –n4
+18)	вывести несколько последних строк из текстового файла- cat lesson1.txt | head –n6 | tail –n4
+19)	просмотреть содержимое длинного файла (команда less) изучите как она работает
+a)	less –s lesson1.txt
+b) поиск текста- /text enter
+c) выйти из текста- q
+      20) вывести дату и время- date +format%c
+
+
+
+
+
+
+
+Задание *
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions- # curl post https://api.quarantine.country/api/v1/regions
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+a)	vi script1
+нажимаем I для редактирования
+# !/bin/bash
+             Cd Qa_course
+             Mkdir Folder1 Folder2 Folder3
+            Cd Folder 1
+             Touch txt1.txt txt2.txt txt3.txt js1.json js2.json
+            Mkdir Gitbush1 Gitbush2 Gitbush 3
+            Ls –la
+           Mv txt1.txt txt2.txt ~/Qa_course/Folder2
+
+b)	esc. Shift ZZ
+c)	chmod ugo+x script.sh
+d)	запускаем скрипт- ./script.sh 
+   
+
+
