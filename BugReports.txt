@@ -1,0 +1,8 @@
+Project (Name of the project)
+Pr11082021 (Unique number of Bugreport)
+Summary (what? where? On what conditions?)
+Status (Open, Assighned, in progress, Fixed, Verified, Reopened, Declined, Closed)
+Priority (High, Major, Medium, Low)
+Severity (critical, major, medium, minor)
+Incident type (Bug, Improvement)
+Incident category (Function)
